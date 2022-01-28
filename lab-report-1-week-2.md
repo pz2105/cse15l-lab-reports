@@ -1,9 +1,13 @@
 # SSH Tutorial
-1. First of all, we need to download VSCode, which is a very helpful environment.
+1. First of all, we need to download VSCode, which is a very helpful environment.   
+This is the link to download VSCode:
+[VSCode](https://code.visualstudio.com)
 ![Image](ScreenShot1.png)
 2. 
 -We will use console in VSCode to connect to remote server.  
--the command is: `ssh cs15lwi22???@ieng6.ucsd.edu`, where you have to look up ??? on you own account.  
+-the command is: `ssh cs15lwi22???@ieng6.ucsd.edu`, where you have to look up ??? on you own account.   
+This is the link to lookup account:
+[UCSD Account](https://sdacs.ucsd.edu/~icc/index.php)   
 -typing your password will get you connected.
 ![Image](ScreenShot2.png)
 3. 
