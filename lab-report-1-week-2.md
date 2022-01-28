@@ -31,4 +31,7 @@ where you need to copy down the location of public key given to you when you ini
 -`javac hello.java; java hello`
 In this example, `;` behaves just like enter, it will run the several commands separately.
 ![Image](ScreenShot6.png)
--If we make a change on our file, and copy the updated file to reomote server and run it, we will only need to run the commands `scp WhereAmI.java cs15lwi22alf@ieng6.ucsd.edu:~/` as well as `ssh cs15lwi22alf@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"`, which takes up 3 keystrokes. This will make running files on remote server much easiler.
+-If we make a change on our file, and copy the updated file to reomote server and run it, we will only need to run the commands     
+`scp WhereAmI.java cs15lwi22alf@ieng6.ucsd.edu:~/`      
+as well as      
+`ssh cs15lwi22alf@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"`, which takes up 3 keystrokes. This will make running files on remote server much easiler.
