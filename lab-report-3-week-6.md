@@ -6,13 +6,14 @@
 where `-r` tells the computer to work recursively, and `.` means the source is the current directory.   
 -Followed by our server's address:      
 `cs15lwi22@ieng6.ucsd.edu`          
--Finally, we want to create a new directory in the server called `markdown-parse` and send all files into it. We could select other names for the file we want.     
+-Finally, we want to create a new directory in the server called `markdown-parse` and send all files into it. We could select other names for the directory we want.     
 -Output in terminal:
 ![Image](lab3_image1a.png)    
+![Image](lab3_image1b.png) 
 -If we only want to send java files, markdown files, or some specific subdirectories to the server, we may use the following code:  
 `scp -r *.java *.md lib/ cs15lwi22@ieng6.ucsd.edu:markdown-parse`       
 where `*.java` means send every file ending with `.java`, and `lib/` refers to the directory we want to send.
-![Image](lab3_image1b.png)    
+   
 
 
 ## 2. Logging into Remote Server and Run the Test
