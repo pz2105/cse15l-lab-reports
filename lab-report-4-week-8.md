@@ -25,8 +25,8 @@
 ![Image](lab4_q2_code.png)
 
 
--The test using my own implementation did not pass, and the corresponding output is `"a.com", "a.com(())", "example.com"`.
-![Image](lab4_q2_own.png)
+-The test using my own implementation passed, and the corresponding output is `"a.com", "a.com(())", "example.com"`.
+![Image](lab4_q2_own_correct.png)
 
 -The test using reviewed implementation did not pass, and the corresponding output is `"a.com", "a.com(("`.
 ![Image](lab4_q2_review.png)
