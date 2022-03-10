@@ -21,7 +21,7 @@
 -Since this is an image, the actual result should be `[]`. Thus, the implementation provided is incorrect.
 ![Image](lab5-s2-3.png)  
 ![Image](lab5-s2-4.png)  
--As we can see, the provided java file did not take image into account, which is indicated by `!` that comes before `[`. In order to make this implementation behave correctly, we should add an if statement on each `[` to identify a potential image.
+-As we can see, the provided java file did not take image into account (note name of own implementation is `MarkdownParseOwn`), which is indicated by `!` that comes before `[`. In order to make this implementation behave correctly, we should add an if statement on each `[` to identify a potential image by checking the `!` between line 57 and 58.
 
 
 
@@ -30,4 +30,5 @@
 -For file `509.md`, the output with our own implementation is `[    /uri \n "title" ]`, while that for provided implementation is `[]`. Since no link should contain space or `\n`, the actual output should be `[]`.
 ![Image](lab5-s2-3.png)  
 ![Image](lab5-s2-4.png)  
--The implementation provided takes into account that if there is space or `\n` envolved inside within a potential link, it should not be considered a valid link. However, within the our own implementation, the program simply search for next close `]`, without taking care of space or `\n`, which is incorrect. Thus, in order to fix it, we ought to check `\n` as well as space just like the provided implementation.
+-The implementation provided takes into account that if there is space or `\n` involved inside a potential link, it should not be considered a valid link. However, within the our own implementation, the program simply search for next close `]`, without taking care of space or `\n`, which is incorrect. Thus, in order to fix it, we ought to copy line 75 from provided implementation and insert it before line 73 for our own implementation. Of course we need to get information about code within `[]`, just like provided java file.
+check `\n` as well as space just like the provided implementation.
