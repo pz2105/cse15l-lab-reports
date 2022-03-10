@@ -11,6 +11,7 @@
 ![Image](lab5-s1-5.png)     
 -In order the compare the two files, I used the command `diff` followed by the two files I just created. Searching within the output, I am able to locate the file the program was running on since I added the file name up front (order of accessing the file within folder does not following numerical order).
 ![Image](lab5-s1-6.png)     
+![Image](lab5-s1-ex.png)     
 
 
 
