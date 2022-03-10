@@ -16,20 +16,19 @@ In order the compare the two files, I used the command `diff` followed by the tw
 
 
 ## First Test
+![Image](lab5-s2-1.png)  
+![Image](lab5-s2-2.png)  
+-For file `577.md`, the output with our own implementation is `[]`, while that for provided implementation is `[train.jpg]`.  
+-Since this is an image, the actual result should be `[]`. Thus, the implementation provided is incorrect.
+![Image](lab5-s2-3.png)  
+![Image](lab5-s2-4.png)  
+-As we can see, the provided java file did not take image into account, which is indicated by `!` that comes before `[`. In order to make this implementation behave correctly, we should add an if statement on each `[` to identify a potential image.
 
 
 
 ## Second Test
--Using CommonMark, the expected output would be `"https://ucsd-cse15l-w22.github.io/"`.
-![Image](lab4_snippet3.png)    
-
--Test Code
-![Image](lab4_q3_code.png)
-
--The test using my own implementation did not pass, and the corresponding output is `StringIndexOutOfBoundsException`.
-![Image](lab4_q3_own.png)
-
--The test using reviewed implementation did not pass, and the corresponding output is `"https://www.twitter.com", "https://ucsd-cse15l-w22.github.io/", "github.com And there's still some more text after that. [this link doesn't have a closing parenthesis for a while](https://cse.ucsd.edu/"`.
-![Image](lab4_q3_review.png)
-
--For this bug, the problem is there is no closing prarenthesis after link `github.com`. It is easy to resolve this by checking whether `indexOf` returns `-1`. But it is quite difficult ask the program to produce the expected output because we will have to check line break, missing bracket, and space. It is impossible to take  all possibilities into account. So, in practice, we will have to draw the line somewhere.
+![Image](lab5-s3-1.png)  
+-For file `509.md`, the output with our own implementation is `[    /uri \n "title"]`, while that for provided implementation is `[]`. Since no link should contain space or `\n`, the actual output should be `[]`.
+![Image](lab5-s2-3.png)  
+![Image](lab5-s2-4.png)  
+-The implementation provided takes into account that if there is space or `\n` envolved inside within a potential link, it should not be considered a valid link. However, within the our own implementation, the program simply search for next close `]`, without taking care of space or `\n`, which is incorrect. Thus, in order to fix it, we ought to check `\n` as well as space just like the provided implementation.
