@@ -5,7 +5,7 @@
 ![Image](lab5-s1-1.png)     
 -Then, I ran the test folder on provided java file and export the result to `public-results.txt`.
 ![Image](lab5-s1-2.png)     
--Next, I imported the `MarkdownParse.java` file our group was working on and perform the same thing above, exporting the result to `own-results.txt`.
+-Next, I imported the `MarkdownParse.java` file our group was working on and performed the same thing above, exporting the result to `own-results.txt`.
 ![Image](lab5-s1-3.png)     
 ![Image](lab5-s1-4.png)     
 ![Image](lab5-s1-5.png)     
